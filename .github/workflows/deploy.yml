@@ -35,5 +35,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "cestmag-portfolio4-33"
-          entrypoint: "/src/server.js"
+          entrypoint: "src/server.js"
           root: ""

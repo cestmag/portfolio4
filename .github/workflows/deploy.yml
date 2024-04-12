@@ -31,9 +31,12 @@ jobs:
       - name: Install step
         run: "npm install"
 
+      - name: Build step
+        run: "node"
+
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
           project: "cestmag-portfolio4-33"
-          entrypoint: "server.js"
+          entrypoint: "src/server.js"
           root: ""

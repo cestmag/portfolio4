@@ -7,7 +7,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand&family=Rajdhani:wght@300&family=VT323&display=swap" rel="stylesheet">
+ 
   <link rel="stylesheet" href="styles3.css">
+ 
 </head>
 <body>
   <div class="floating-menu">
@@ -24,10 +26,23 @@
   </header>
 
   <main id="artworkContainer"></main>
+
+ <!--<div id="videoPopup" class="video-popup">
+    <div class="video-popup-content">
+      <span class="close-button">&times;</span>
+      <video id="popupVideo" class="plyr__video-embed">
+
+        <source id="popupVideoSource" type="video/mp4">
+      </video>
+    </div>
+  </div>-->
+  
   <div id="videoPopup" class="video-popup">
     <div class="video-popup-content">
       <span class="close-button">&times;</span>
-      <video id="popupVideo" controls controlsList="nodownload" ></video>
+    <!--  <video id="popupVideo" controls controlsList="nodownload" ></video>-->
+    <iframe allow="autoplay" loading="auto" id="popupVideo"></iframe>
+   
     </div>
   </div>
   
@@ -35,5 +50,6 @@
     <p>&copy; 2024 Art Work Portfolio. All rights reserved.</p>
   </footer>
   <script src="app3.js"></script>
+  
 </body>
 </html>

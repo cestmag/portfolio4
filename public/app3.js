@@ -1,5 +1,190 @@
 //document.oncontextmenu = function () {return false;}
+// app3.js
+//document.oncontextmenu = function () { return false; }
+//document.oncontextmenu = function () { return false; }
+/*
+const artworkContainer = document.getElementById('artworkContainer');
+const videoPopup = document.getElementById('videoPopup');
+const closeButton = document.querySelector('.close-button');
+const popupVideo = document.getElementById('popupVideo');
 
+fetch('/videos.json')
+  .then(response => response.json())
+  .then(data => {
+    artworkData = data;
+    renderArtworkData();
+  })
+  .catch(error => {
+    console.error('Error fetching artwork data:', error);
+  });
+
+function renderArtworkData() {
+  artworkData.forEach((artwork, index) => {
+    const artworkElement = document.createElement('div');
+    artworkElement.classList.add('artwork');
+
+    const videoElement = document.createElement('div');
+    videoElement.classList.add('artwork-video');
+
+    const thumbnail = document.createElement('img');
+    thumbnail.classList.add('artwork-video-thumbnail');
+    thumbnail.src = `./thumbnails/${artwork.thumbnailUrl}`;
+
+    const infoElement = document.createElement('div');
+    infoElement.classList.add('artwork-info');
+
+    const titleElement = document.createElement('div');
+    titleElement.textContent = artwork.title;
+
+    const dateElement = document.createElement('div');
+    dateElement.textContent = artwork.date;
+
+    const descriptionElement = document.createElement('div');
+    descriptionElement.textContent = artwork.description;
+
+    infoElement.appendChild(titleElement);
+    infoElement.appendChild(dateElement);
+    infoElement.appendChild(descriptionElement);
+
+    if (index % 2 === 0) {
+      videoElement.appendChild(thumbnail);
+      artworkElement.appendChild(videoElement);
+      artworkElement.appendChild(infoElement);
+    } else {
+      artworkElement.appendChild(infoElement);
+      videoElement.appendChild(thumbnail);
+      artworkElement.appendChild(videoElement);
+    }
+
+    artworkContainer.appendChild(artworkElement);
+
+    
+    videoElement.addEventListener('click', () => {
+      console.log('Clicked video element:', artwork.videoUrl);
+      const player = new Plyr('#popupVideo', {
+        sources: [
+          {
+            src: artwork.videoUrl,
+            type: 'video/mp4',
+          },
+        ],
+
+        fullscreen: {
+          enabled: true,
+          fallback: true,
+          iosNative: true
+        },
+        controls: [
+          'play-large',
+          'play',
+          'progress',
+          'current-time',
+          'mute',
+          'volume',
+          'fullscreen'
+        ]
+      });
+      videoPopup.style.display = 'block';
+    });
+
+  });
+
+  closeButton.addEventListener('click', () => {
+    console.log('Close button clicked!');
+    videoPopup.style.display = 'none';
+    
+    //popupVideo.src = '';
+  });
+
+  window.addEventListener('click', (event) => {
+    console.log('Clicked on videoPopup:', event.target);
+    if (event.target == videoPopup) {
+      videoPopup.style.display = 'none';
+      
+      //popupVideo.src = '';
+    }
+  });
+}*/
+
+//旧版2
+
+const artworkContainer = document.getElementById('artworkContainer');
+const videoPopup = document.getElementById('videoPopup');
+const closeButton = document.querySelector('.close-button');
+const popupVideo = document.getElementById('popupVideo');
+
+fetch('/videos.json')
+  .then(response => response.json())
+  .then(data => {
+    artworkData = data;
+    renderArtworkData();
+  })
+  .catch(error => {
+    console.error('Error fetching artwork data:', error);
+  });
+
+function renderArtworkData() {
+  artworkData.forEach((artwork, index) => {
+    const artworkElement = document.createElement('div');
+    artworkElement.classList.add('artwork');
+
+    const videoElement = document.createElement('div');
+    videoElement.classList.add('artwork-video');
+
+    const thumbnail = document.createElement('img');
+    thumbnail.classList.add('artwork-video-thumbnail');
+    thumbnail.src = `./thumbnails/${artwork.thumbnailUrl}`;
+
+    const infoElement = document.createElement('div');
+    infoElement.classList.add('artwork-info');
+
+    const titleElement = document.createElement('div');
+    titleElement.textContent = artwork.title;
+
+    const dateElement = document.createElement('div');
+    dateElement.textContent = artwork.date;
+
+    const descriptionElement = document.createElement('div');
+    descriptionElement.textContent = artwork.description;
+
+    infoElement.appendChild(titleElement);
+    infoElement.appendChild(dateElement);
+    infoElement.appendChild(descriptionElement);
+
+    if (index % 2 === 0) {
+      videoElement.appendChild(thumbnail);
+      artworkElement.appendChild(videoElement);
+      artworkElement.appendChild(infoElement);
+    } else {
+      artworkElement.appendChild(infoElement);
+      videoElement.appendChild(thumbnail);
+      artworkElement.appendChild(videoElement);
+    }
+
+    artworkContainer.appendChild(artworkElement);
+
+    videoElement.addEventListener('click', () => {
+      //popupVideo.src = `${artwork.videoUrl}`;
+      popupVideo.src = artwork.videoUrl
+      //popupVideo.src = `/video/${artwork.videoUrl}`;
+      videoPopup.style.display = 'block';
+    });
+  });
+
+  closeButton.addEventListener('click', () => {
+    videoPopup.style.display = 'none';
+    popupVideo.src = '';
+  });
+
+  window.addEventListener('click', (event) => {
+    if (event.target == videoPopup) {
+      videoPopup.style.display = 'none';
+      popupVideo.src = '';
+    }
+  });
+}
+/*
+//旧版
 const artworkContainer = document.getElementById('artworkContainer');
 const videoPopup = document.getElementById('videoPopup');
 const closeButton = document.querySelector('.close-button');
@@ -33,7 +218,7 @@ function renderArtworkData() {
     const thumbnail = document.createElement('img'); // Change from div to img
     thumbnail.classList.add('artwork-video-thumbnail');
 
-    /* Add a placeholder image if there's no thumbnail URL in the data */
+    
     thumbnail.src = `./thumbnails/${artwork.thumbnailUrl}`//artwork.thumbnailUrl //|| 'path/to/placeholder.jpg';
   
     const infoElement = document.createElement('div');
@@ -82,7 +267,7 @@ function renderArtworkData() {
       popupVideo.src = ''; // Clear the video source
     }
   });
-
+}*/
  /* videoElement.addEventListener('click', () => {
     popupVideo.src = `./videos/${artwork.videoUrl}`;
     videoPopup.style.display = 'flex'; // Change to 'flex' to center the content
@@ -172,7 +357,7 @@ function renderArtworkData() {
     };
   });*/
 
-}
+//}
 
 
   /*artworkData.forEach((artwork, index) => {

@@ -1,0 +1,266 @@
+/* Existing CSS */
+body {
+    font-family: "Playfair Display", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, #000000 35%, #560456 35%, #560456 65%, #000000 65%);
+  }
+  
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 50px; /* Add padding to the top */
+}
+
+header p{
+   padding-left: 20px;
+   padding-right: 20px;
+}
+  
+#artworkContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 800px;
+}
+
+.artwork {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.artwork-video {
+    width: 400px;
+    height: 225px;
+    background-color: #0b3d21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    border-radius: 5px;
+}
+
+.artwork-video-thumbnail{
+  border-radius: 5px;
+    max-width: 100%;
+    max-height: 100%;
+    
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+
+.artwork-video-thumbnail:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .artwork-video-thumbnail:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    animation: pulse 1s infinite;
+    z-index: 1;
+  }
+
+/*.artwork-video :hover{
+
+}*/
+
+.artwork-info {
+    width: 400px;
+    padding: 20px;
+    background-color: #80008000;
+    text-align: left;
+}
+
+.artwork-info div {
+    margin-bottom: 5px;
+}
+
+/* New CSS for floating menu */
+.floating-menu {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+/* Updated CSS for floating menu */
+.floating-menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Change to flexbox */
+    justify-content: center; /* Align items horizontally in center */
+}
+
+.floating-menu ul li {
+    margin-left: 10px;
+}
+
+.floating-menu ul li:first-child {
+    margin-left: 0; /* Remove margin from the first child */
+}
+
+.floating-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.floating-menu ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/*
+ position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 1000;
+*/
+
+/*.floating-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.floating-menu ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.floating-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.floating-menu ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}*/
+
+::-webkit-scrollbar {
+    width: 5px; /* width of the scrollbar */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #560456; /* color of the scrollbar handle */
+    border-radius: 5px; /* rounded corners */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* color of the scrollbar handle on hover */
+  }
+/* Existing CSS code */
+
+.video-popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .video-popup-content {
+   /* background-color: #440808;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #ffffff;
+  width: 80%;
+  max-width: 90%; 
+  max-height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;*/
+    background-color: #440808;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .video-popup-content video {
+
+  
+ /* width: 100%;
+  height: 100%;
+  object-fit: contain;*/
+   /* max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;*/
+   /* max-width: 100%;
+    max-height: 100%;*/
+
+    max-width: 100%;
+    height: auto;
+    /*original!!!!!!!!!!!!
+    */
+    /*height: auto;*/
+    /*max-height: 100%;*/
+  }
+  
+  .close-button {
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-button:hover,
+  .close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  footer {
+    /*background-color: #560456;*/
+    color: #ffffff;
+    text-align: center;
+    font-size: 10px;
+    /*width: 100%;
+    position: absolute;
+    bottom: 0;*/
+  }
+  

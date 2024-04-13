@@ -64,7 +64,8 @@ server.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });*/
 
-const port = process.env.PORT || 8080;
+//const port = process.env.PORT || 8080;
+const port = 8080;
 
 https.createServer(options, app).listen(port, () => {
   console.log(`サーバーが HTTPS://localhost:${port} で起動しました`);

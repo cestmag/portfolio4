@@ -15,7 +15,7 @@ RUN npm install --production
 COPY . .
 
 # Listen port
-EXPOSE 8080
+EXPOSE 3003
 
 # Run Node.js
 CMD [ "npm", "start" ]

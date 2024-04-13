@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const app = express();
-const server= require('http').Server(app)
+
 // Serve static files (HTML, CSS, JS)
 app.use(express.static(path.join(__dirname, '../public')));
 
@@ -53,7 +53,7 @@ app.get('/work', (req, res) => {
 
 // Start server
 const PORT = process.env.PORT || 8080;
-server.listen(PORT, () => {
+app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 

@@ -1,10 +1,17 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
+const https = require('https');
 const app = express();
 const server= require('http').Server(app)
 // Serve static files (HTML, CSS, JS)
 app.use(express.static(path.join(__dirname, './public')));
+
+// SSL証明書と秘密鍵の読み込み
+const options = {
+  key: fs.readFileSync('private.key'),
+  cert: fs.readFileSync('certificate.crt')
+};
 
 // Routes
 app.get('/', (req, res) => {
@@ -52,9 +59,15 @@ app.get('/work', (req, res) => {
 });*/
 
 // Start server
-const PORT = process.env.PORT || 8080;
+/*const PORT = process.env.PORT || 8080;
 server.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
+});*/
+
+const port = process.env.PORT || 8080;
+
+https.createServer(options, app).listen(port, () => {
+  console.log(`サーバーが HTTPS://localhost:${port} で起動しました`);
 });
 
 /*

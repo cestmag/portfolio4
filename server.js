@@ -4,23 +4,23 @@ const fs = require('fs');
 const app = express();
 const server= require('http').Server(app)
 // Serve static files (HTML, CSS, JS)
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, './public')));
 
 // Routes
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public', 'index3.html'));
+  res.sendFile(path.join(__dirname, './public', 'index3.html'));
 });
 
 app.get('/about', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public', 'about.html'));
+  res.sendFile(path.join(__dirname, './public', 'about.html'));
 });
 
 app.get('/contact', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public', 'contact.html'));
+  res.sendFile(path.join(__dirname, './public', 'contact.html'));
 });
 
 app.get('/work', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public', 'index3.html'));
+  res.sendFile(path.join(__dirname, './public', 'index3.html'));
 });
 
 // Video proxy route

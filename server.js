@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname, './public')));
 
 // SSL証明書と秘密鍵の読み込み
 const options = {
-  key: fs.readFileSync('private.key'),
+  key: fs.readFileSync('private-key.pem'),
   cert: fs.readFileSync('certificate.crt')
 };
 

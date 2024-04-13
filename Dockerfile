@@ -7,8 +7,9 @@ ENV NODE_ENV=production
 WORKDIR /portfolio3
 
 # Install app dependencies (package.json and package-lock.json)
-COPY package*.json ./
-RUN npm install
+#COPY package*.json ./
+COPY ["package.json", "package-lock.json*", "./"]
+RUN npm install --production
 
 # Bundle app source (server.js)
 COPY . .

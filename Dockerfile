@@ -1,7 +1,6 @@
 # OS: Debian Buster
 # Node.js: 14.4.0
-FROM node:10.1.0
-
+FROM node:20.9.0
 ENV NODE_ENV=production
 # Create app directory
 WORKDIR /portfolio3

@@ -1,4 +1,4 @@
-//document.oncontextmenu = function () {return false;}
+document.oncontextmenu = function () {return false;}
 // app3.js
 //document.oncontextmenu = function () { return false; }
 //document.oncontextmenu = function () { return false; }

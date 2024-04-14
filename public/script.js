@@ -1,3 +1,4 @@
+document.oncontextmenu = function () {return false;}
 fetch('photos.json')
   .then(response => response.json())
   .then(data => {

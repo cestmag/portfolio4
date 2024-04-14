@@ -1,8 +1,5 @@
 [
-    {
-      "url": "./making/a.png",
-      "title": "./making/a.png"
-    },
+    
     {
       "url": "./making/1.png",
       "title": "Photo 2"
@@ -38,5 +35,14 @@
     {
       "url": "./making/9.jpg",
       "title": "Photo 6"
+    }
+    ,
+    {
+      "url": "./making/10.jpg",
+      "title": "Photo 6"
+    },
+    {
+      "url": "./making/a.png",
+      "title": "./making/a.png"
     }
   ]

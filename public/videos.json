@@ -54,33 +54,5 @@
     "description": "孤高のオオカミについて謳ったもの. 最後に流れるハイピッチの音はオオカミの遠吠えをイメージしたもの. ",
     "videoUrl": "https://www.dailymotion.com/embed/video/k1GvklgOevlLGiAsDWC?autoplay=1",
     "thumbnailUrl": "wolf_pic.jpg"
-  },
-  {
-    "title": "Artwork 1",
-    "date": "2023 8 01",
-    "description": "Description for Artwork 1",
-    "videoUrl": "path/to/video1.mp4",
-    "thumbnailUrl": "thumbnail1.jpg"
-  },
-  {
-    "title": "Artwork 2",
-    "date": "2017 8 02",
-    "description": "Description for Artwork 2",
-    "videoUrl": "https://www.dailymotion.com/embed/video/k3Ywy9AA8kWhDMAsHLI?autoplay=1",
-    "thumbnailUrl": "thumbnail1.jpg"
-  },
-  {
-    "title": "Artwork 3",
-    "date": "2017 8 03",
-    "description": "Description for Artwork 3",
-    "videoUrl": "https://www.dailymotion.com/embed/video/k5tgSWOnpAkgSLAsHOI?autoplay=1",
-    "thumbnailUrl": "thumbnail1.jpg"
-  },
-  {
-    "title": "Artwork 4",
-    "date": "紀元前1000年頃",
-    "description": "現存するx氏の曲の中で最古のもの. 曲を作ろうとする意志は感じられる.",
-    "videoUrl": "https://www.dailymotion.com/embed/video/k4f9uLQ931qBZlAsHME?autoplay=1",
-    "thumbnailUrl": "thumbnail1.jpg"
   }
 ]

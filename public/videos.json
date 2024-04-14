@@ -64,23 +64,23 @@
   },
   {
     "title": "Artwork 2",
-    "date": "2023 8 02",
+    "date": "2017 8 02",
     "description": "Description for Artwork 2",
-    "videoUrl": "path/to/video2.mp4",
+    "videoUrl": "https://www.dailymotion.com/embed/video/k3Ywy9AA8kWhDMAsHLI?autoplay=1",
     "thumbnailUrl": "thumbnail1.jpg"
   },
   {
     "title": "Artwork 3",
-    "date": "2023 8 03",
+    "date": "2017 8 03",
     "description": "Description for Artwork 3",
-    "videoUrl": "path/to/video3.mp4",
+    "videoUrl": "https://www.dailymotion.com/embed/video/k5tgSWOnpAkgSLAsHOI?autoplay=1",
     "thumbnailUrl": "thumbnail1.jpg"
   },
   {
     "title": "Artwork 4",
     "date": "紀元前1000年頃",
     "description": "現存するx氏の曲の中で最古のもの. 曲を作ろうとする意志は感じられる.",
-    "videoUrl": "path/to/video4.mp4",
+    "videoUrl": "https://www.dailymotion.com/embed/video/k4f9uLQ931qBZlAsHME?autoplay=1",
     "thumbnailUrl": "thumbnail1.jpg"
   }
 ]

@@ -8,51 +8,79 @@
   },
   {
     "title": "Artwork 3",
-    "date": "2023 8 03",
+    "date": "2023 5 28",
     "description": "AIロボットに支配された世界で, 人間がまだ生きていた時代からずっと同じ音楽を流し続けるパソコンがあった.",
     "videoUrl": "https://www.dailymotion.com/embed/video/k39rnMPrV87DmBAsDWu?autoplay=1",
     "thumbnailUrl": "deer2_pic.jpg"
   },
   {
     "title": "Artwork 2",
-    "date": "2023 8 02",
+    "date": "2023 5 28",
     "description": "あなたはAIロボットによって支配されている未来の世界を垣間見る.",
     "videoUrl": "https://www.dailymotion.com/embed/video/k4eNNY0bEsZDcMAsDWy?autoplay=1",
     "thumbnailUrl": "robot_pic.jpg"
   },
   {
     "title": "Back to 1902",
-    "date": "2023 8 04",
+    "date": "2022 7 19",
     "description": "1902年のスウェーデンから1344年の日本にタイムスリップし, ある侍と恋に落ちてしまった織琵阿(Olivia)が, 彼との別れを惜しみつつ, 再び1902年に戻る場面.",
     "videoUrl": "https://www.dailymotion.com/embed/video/k36Il6y7DLrpG3AsDWs?autoplay=1",
     "thumbnailUrl": "olivia_pic.jpg"
   },
   {
     "title": "Parasite",
-    "date": "2023 8 01",
+    "date": "2022 4 05",
     "description": "韓国映画「パラサイト」中に登場するジェシカラップをレミックスしたもの. 曲の展開を映画の展開に合わせた.",
     "videoUrl": "https://www.dailymotion.com/embed/video/k2vfVrVGZ9nv5oAsDWq?autoplay=1",
     "thumbnailUrl": "parasite_pic.jpg"
   },
   {
     "title": "Artwork 2",
-    "date": "2023 8 02",
+    "date": "2021 12 31",
     "description": "No one knows what's gonna happen, just take it easy",
     "videoUrl": "https://www.dailymotion.com/embed/video/k6Y6vq6XGlxq9tAsDWA?autoplay=1",
     "thumbnailUrl": "castle_pic.jpg"
   },
   {
-    "title": "Artwork 3",
-    "date": "2023 8 03",
-    "description": "hoooooy yea",
+    "title": "No time to lose",
+    "date": "2021 9 13",
+    "description": "I made this when i had to stay in my house because of c*vid 19. ",
     "videoUrl": "https://www.dailymotion.com/embed/video/k6X6JfPakHDbqzAsDWE?autoplay=1",
     "thumbnailUrl": "vocalo_1.jpg"
   },
   {
     "title": "Wolf in the mind",
-    "date": "2023 8 04",
+    "date": "2021 5 18",
     "description": "孤高のオオカミについて謳ったもの. 最後に流れるハイピッチの音はオオカミの遠吠えをイメージしたもの. ",
     "videoUrl": "https://www.dailymotion.com/embed/video/k1GvklgOevlLGiAsDWC?autoplay=1",
     "thumbnailUrl": "wolf_pic.jpg"
+  },
+  {
+    "title": "休",
+    "date": "2018~2021",
+    "description": "火星に旅行していたため作曲活動休止. I hadn't been making music during this period due to my trip to Mars.",
+    "videoUrl": "https://www.dailymotion.com/embed/video/x8i1ffw?autoplay=1",
+    "thumbnailUrl": "nothing.png"
+  },
+  {
+    "title": "#3 Unknown World",
+    "date": "2017",
+    "description": "Full of unknown things, full of excitement",
+    "videoUrl": "https://www.dailymotion.com/embed/video/k4f9uLQ931qBZlAsHME?autoplay=1",
+    "thumbnailUrl": "highsc1.jpg"
+  },
+  {
+    "title": "#2",
+    "date": "2017",
+    "description": "",
+    "videoUrl": "https://www.dailymotion.com/embed/video/k5LlyBQVJjYwKaAt7wM?autoplay=1",
+    "thumbnailUrl": "highsc2_highlight2.jpg"
+  },
+  {
+    "title": "#1",
+    "date": "2017",
+    "description": "",
+    "videoUrl": "https://www.dailymotion.com/embed/video/k2YLWW4QsXtjNvAt7PU?autoplay=1",
+    "thumbnailUrl": "highsc3_highlight2.jpg"
   }
 ]

@@ -25,4 +25,11 @@
     "description": "現存するx氏の曲の中で最古のもの. 曲を作ろうとする意志は感じられる.",
     "videoUrl": "https://www.dailymotion.com/embed/video/k4f9uLQ931qBZlAsHME?autoplay=1",
     "thumbnailUrl": "thumbnail1.jpg"
+  },
+  {
+    "title": "休",
+    "date": "2018~2021",
+    "description": "火星に旅行していたため作曲活動休止. I hadn't been making music during this period due to my trip to Mars.",
+    "videoUrl": "https://www.dailymotion.com/embed/video/x8i1ffw?autoplay=1",
+    "thumbnailUrl": "nothing.png"
   }

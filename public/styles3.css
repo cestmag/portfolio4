@@ -41,12 +41,13 @@ header p{
 .artwork-video {
     width: 400px;
     height: 225px;
-    background-color: #0b3d21;
+    background-color: #2f3d0b;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #999;
     border-radius: 5px;
+    /*#0b3d21*/
 }
 
 .artwork-video-thumbnail{
